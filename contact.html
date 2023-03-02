@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Josefin+Sans:ital,wght@0,400;1,200&display=swap');
+
+        body {
+
+            font-family: 'Josefin Sans', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+
+        }
+        #parent{
+            margin: auto;
+            width: 80%;
+            margin-bottom: 40px;
+        }
+
+       
+
+        #box1 {
+            margin: auto;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            text-align: center;
+
+        }
+
+        #box2 {
+            /* margin-top: 40px; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        #box2>div {
+            margin: 0rem 2rem;
+            padding: 0px 3rem;
+            /* border: 1px solid; */
+
+
+        }
+
+        h1 {
+            margin: auto;
+            color: rgb(23, 125, 159);
+            letter-spacing: 0.3rem;
+            font-weight: bolder;
+            font-size: 3rem;
+        }
+
+
+        #contact {
+            margin: auto;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            color: rgb(203, 206, 206);
+            width: 50%;
+            margin-bottom: 3rem;
+            letter-spacing: 0.2rem;
+
+            margin-top: 1.1rem;
+        }
+
+        address {
+            margin-top: -18px;
+            color: rgb(242, 242, 242);
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+
+        }
+
+        input {
+            width: 80%;
+            height: 2rem;
+            padding: 0.3rem 1.5rem;
+            border: none;
+            border-bottom: 2px solid;
+            margin-bottom: 1rem;
+            letter-spacing: 0.2rem;
+
+
+        }
+
+        #send_message {
+            padding: 1rem;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            width: 75%;
+            letter-spacing: 0.2rem;
+
+        }
+
+        #send_tag {
+            color: rgb(23, 125, 159);
+
+            margin-bottom: 2rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+
+        }
+
+        form {
+            margin: auto;
+        }
+
+        button {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            border: none;
+            color: #ffffff;
+            background-color: rgb(35, 79, 113);
+            letter-spacing: 0.2rem;
+
+        }
+        #navbar {
+           
+            border-bottom: 5px solid black;
+
+            padding: 0rem 1rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            /* cursor: pointer; */
+        }
+
+
+        nav {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            gap: 1.5rem;
+        }
+
+        li {
+            /* margin-bottom:1px ; */
+            margin-top: 1.5rem;
+            color: #ffffff;
+            list-style: none;
+            font-weight: bolder;
+        }
+
+
+        p {
+            font-size: 1.5rem;
+            letter-spacing: 0.2rem;
+
+            color: rgb(23, 125, 159);
+        }
+        #logo {
+            height: 1.9rem;
+            /* margin-bottom: 1rem; */
+                background-color: #fffcfc;
+            
+        }
+        #logo_box{
+            border: 1px solid white;
+            text-align: center;
+            padding: 3px;
+
+        }
+
+        #span {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-left: 5px;
+            background-color: rgb(2, 53, 70);
+
+        }
+
+
+        @media screen and (max-width:770px) {
+            #parent{
+                width:100%;
+            }
+            #box1 {
+                margin-top: 1rem;
+            }
+
+            h1 {
+                letter-spacing: 0rem;
+
+            }
+
+            #contact {
+                width: 100%;
+
+                font-weight: 500;
+                letter-spacing: 0rem;
+
+            }
+
+            #box2 {
+                display: block;
+            }
+
+            #box2>div {
+                margin: 60px 0px;
+            }
+
+            #send_message {
+                width: 100%;
+            }
+            #logo{
+                height: 2rem;
+                background-color: #fffcfc;
+            }
+
+            #span{
+                background-color: rgb(2, 53, 70);
+                width: 50%;
+                margin-top: 0rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+
+        <nav>
+            <ul>
+                <div id="logo_box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946532.png" id="logo" alt="">
+                    <span id="span">
+                        BEE'S HOME
+                    </span>
+                </div>
+                <a href="/">
+                    <li>HOME</li>
+
+                </a>
+                <a href="./contact.html">
+
+                    <li>CONTACT US</li>
+                </a>
+            </ul>
+
+
+        </nav>
+
+
+
+    </div>
+    <div id="parent">
+        
+
+        <div class="box" id="box1">
+            <h1> Contact Us</h1>
+            <p id="contact">Let's Buzz About the Sweet World of Beekeeping: Building a Sustainable Future for Our Hives
+                and Crops.
+
+        </div>
+        <div class="box" id="box2">
+
+            <div id="discriptions">
+                <div>
+                    <p>Address</p>
+                    <address> Nawab Pura, Nandura, Maharashtra <br> pincode: 443404</address>
+
+                </div>
+                <div>
+                    <p>Phone</p>
+                    <address>+91 91688-30388</address>
+
+                </div>
+                <div>
+                    <p>Email</p>
+
+                    <address>monisykhan@gmail.com</address>
+                </div>
+
+            </div>
+
+            <div>
+                <div id="send_message">
+                    <p id="send_tag"> Send Message</p>
+                    <form action="" id="form">
+
+                        <input type="text" id="name"   value="" placeholder="Full Name"> <br> <br>
+                        <input type="text"  id="email"  value="" placeholder="Email"> <br> <br>
+                        <input type="text" id="message"   value="" placeholder="Type Your Message"> <br> <br>
+                        <button id="send_response">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./contact.js"></script>

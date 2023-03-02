@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSAID</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Josefin+Sans:ital,wght@0,400;1,200&display=swap');
+
+
+
+        body {
+
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f3145;
+            color: aliceblue;
+        }
+
+        #parent {
+            margin: auto;
+            width: 75%;
+        }
+
+        #navbar {
+           
+            border-bottom: 5px solid black;
+
+            padding: 0rem 1rem;
+            margin-top: 5px;
+        }
+
+
+
+
+        nav {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        li {
+            /* margin-bottom:1px ; */
+            margin-top: 1.5rem;
+            color: #fcfcfc;
+            list-style: none;
+            font-weight: bolder;
+        }
+
+        .display {
+            /* border: 2px solid; */
+            /* background-image: url('https://w7.pngwing.com/pngs/579/345/png-transparent-beekeeper-itatiba-beekeeping-apitherapy-beehive-colmeia-de-abelha-recycling-beehive-apitherapy.png'); */
+            height: 100%;
+            /* background: transparent; */
+
+
+            object-fit: cover;
+            padding: 1rem 2rem;
+            color: #d68538;
+
+        }
+
+
+
+        #overviw-discriptions {
+            color: #ffffff;
+            line-height: 1.75rem;
+            width: 100%;
+            font-size: 1.5rem;
+            padding: 0.5rem 5rem;
+        }
+
+        .overview {
+            /* border: 1px solid; */
+
+            color: rgb(23, 125, 159);
+
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+
+            /* width: 75vw; */
+        }
+
+
+        #contact_us_btn {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contact_us_btn div {
+            margin: 40px 0px;
+            /* border: 1px solid; */
+            /* width: 3rem;
+    height: 1rem; */
+        }
+
+        .btn_for_contact {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            border: none;
+            color: #094c6e;
+
+        }
+
+        .services {
+            padding: 1rem 2rem;
+
+        }
+
+        #image_discriptions {
+            color: #ffffff;
+            letter-spacing: 0.2rem;
+
+            line-height: 1.5rem;
+            width: 65%;
+            font-size: 1.3rem;
+            /* font-style: italic; */
+            font-weight: bolder;
+            /* background:transparent; */
+            /* background-image: linear-gradient(rgb(255, 255, 255), rgb(74, 74, 73)); */
+        }
+
+
+
+        .sample {
+            display: grid;
+            grid-template-columns: 25% 65%;
+            color: rgb(11, 59, 101);
+            gap: 2rem;
+
+        }
+
+        .sample div {
+            /* height: 220px; */
+            
+            margin-top: 40px;
+            object-fit: fill;
+
+
+        }
+
+
+        
+        .sample>#image>img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: rgba(24, 84, 129, 0.573) -5px 5px, rgba(54, 113, 134, 0.829) -10px 10px, rgba(23, 116, 177, 0.404) -15px 15px, rgba(91, 211, 225, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+        }
+        #first_image{
+    margin-top: 100px;
+
+}
+
+#second_image{
+    margin-top: 95px;
+    
+}
+#third_image{
+    margin-top: 58px;
+
+}
+
+hr{
+    margin-top: 40px;
+}
+
+
+
+        footer {
+            margin-top: 40px;
+            border-top: 2px solid;
+        }
+
+        #footer {
+            /* border: 2px solid darkblue; */
+            display: grid;
+            grid-template-columns: 80% 20%;
+            padding: 3rem 3rem;
+            gap: 2rem;
+
+        }
+
+
+
+        #copyrigth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #042f49;
+            height: 2rem;
+            margin: auto;
+            color: #4e4343;
+        }
+
+        #mid_footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        #mid_footer>div {
+            margin: auto;
+            text-align: center;
+
+        }
+
+        #mid_footer>div>a>img {
+            height: 2rem;
+            /* width: 100%; */
+        }
+
+        #top-footer {
+            margin: auto;
+            padding: 0px 1rem;
+        }
+
+
+        a {
+            text-decoration: none;
+            /* cursor: pointer; */
+            color: #fffcfc;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #logo {
+            height: 1.9rem;
+            /* margin-bottom: 1rem; */
+                background-color: #fffcfc;
+            
+        }
+        #logo_box{
+            border: 1px solid white;
+            text-align: center;
+            padding: 3px;
+
+        }
+
+        #span {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-left: 5px;
+            background-color: rgb(2, 53, 70);
+
+        }
+        
+
+
+        @media screen and (max-width:640px) {
+            #logo{
+                height: 2rem;
+                background-color: #fffcfc;
+            }
+
+            #span{
+                background-color: rgb(2, 53, 70);
+                width: 50%;
+                margin-top: 0rem;
+            }
+            #parent {
+                margin: 0;
+                width: 100%;
+                /* border: 1px solid rebeccapurple; */
+            }
+
+            .display {
+                /* */
+                /* width: 100%; */
+
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .sample {
+                display: block;
+            }
+
+            #overviw-discriptions {
+                width: 85vw;
+                padding: 0;
+            }
+
+            footer {
+                /* padding: 0px 10px; */
+                width: 100%;
+            }
+
+            #footer {
+                display: block;
+                /* width: 100%; */
+
+            }
+
+            #footer div {
+                width: 100%;
+                margin-top: 40px;
+            }
+
+            #footer>div:first-child {
+                padding: 0.7rem;
+            }
+
+            #top-footer>button {
+                position: static;
+
+                background-color: black;
+                /* margin-left: 16rem; */
+            }
+
+            #top-footer>h1 {
+                position: static;
+
+            }
+
+            #copyrigth>h3 {
+                font-size: 0.78rem;
+            }
+
+            .overview {
+                font-size: 1.2rem;
+            }
+
+            #top-footer>p {
+                line-height: 1.3rem;
+            }
+
+            .btn_for_contact {
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                border: none;
+                color: #094c6e;
+                /* width: 75%; */
+            }
+
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="navbar">
+
+        <nav>
+            <ul>
+                <div id="logo_box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1946/1946532.png" id="logo" alt="">
+                    <span id="span">
+                        BEE'S HOME
+                    </span>
+                </div>
+                <a href="/">
+                    <li>HOME</li>
+
+                </a>
+                <a href="./contact.html">
+
+                    <li>CONTACT US</li>
+                </a>
+            </ul>
+
+
+        </nav>
+
+
+
+    </div>
+    <div class="parent" id="parent">
+
+
+        <div id="middleview">
+            <div class="display">
+                <div class="overview">
+                    <h1> OVERVIEW</h1>
+
+                </div>
+
+                <p id="overviw-discriptions">
+                    Beekeeping is the maintenance of bee colonies in hives, in order to harvest honey and other bee
+                    products like wax, pollen, and propolis. Beekeeping is a growing business, as consumers are becoming
+                    more aware of the benefits of natural and locally sourced products, and the importance of
+                    pollinators for the environment.
+                </p>
+
+                <div id="contact_us_btn">
+                    <div>
+                        <a class="btn_for_contact" href="./contact.html">
+
+
+                            <button class="btn_for_contact"> CONTACT US</button>
+
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+<hr>
+            <div class="services" id="services">
+
+                <div>
+                    <div class="overview">
+                        <h1>SERVICES</h1>
+
+                    </div>
+
+                </div>
+
+                <div class="sample">
+
+
+
+                    <div id="image">
+                        <img id="first_image" src="https://images.unsplash.com/photo-1550170139-ed6b5e6b4c38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
+                            alt="none">
+                    </div>
+
+                    <div>
+                        <p id="image_discriptions">
+                            <u> POLLINATION SERVICES </u>
+                            <br>
+                            <br>
+                        <p>
+                            <li>
+
+                                Beekeepers can offer their hives for rent to farmers to
+                                help pollinate crops, which is especially important for crops like almonds that are
+                                almost
+                                entirely dependent on bee pollination.
+                            </li>
+                            <br>
+                            <br>
+
+                            <li> Role of bees in pollination: Bees are important pollinators, as they play a crucial
+                                role in the reproduction of many plant species. When a bee collects nectar from a
+                                flower, some pollen from the flower's anthers sticks to the bee's body. When the bee
+                                visits another flower, some of this pollen rubs off, fertilizing the flower's ovules and
+                                allowing it to produce seeds.
+                            </li>
+
+
+                            <li>
+
+                                Benefits of bee pollination: Bee pollination is essential for the production of many
+                                crops, including fruits, vegetables, and nuts. In fact, approximately one-third of all
+                                the food we eat is directly or indirectly dependent on bee pollination.
+                            </li>
+
+                            <br>
+                            <br>
+                            <li>
+
+                                Decline in bee populations: In recent years, there has been a decline in bee
+                                populations, which is a cause for concern as bees play a critical role in pollination
+                                and food production. The decline in bee populations is due to various factors, including
+                                habitat loss, pesticide exposure, disease, and climate change.
+
+
+                            </li>
+                            <br>
+                            <br>
+                            <li>
+                                Importance of conserving bees: Maintaining healthy bee populations is essential for the
+                                health of our ecosystems and food supply. Steps to conserve bees include reducing the
+                                use of pesticides, providing habitats for bees, and supporting sustainable beekeeping
+                                practices.
+
+                            </li>
+
+                        </p>
+                        </p>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sample">
+
+
+
+                    <div id="image">
+                        <img id="second_image" src="https://www.shutterstock.com/image-vector/save-bees-cartoon-sadness-bee-600w-1486981424.jpg"
+                            alt="none">
+                    </div>
+
+                    <div>
+                        <p id="image_discriptions">
+                            <u>DECLINE IN BEE POPULATIONS</u>
+                            <br>
+                            <br>
+                        <p id="discriptions" style="margin: 0px 1.2rem;">
+
+                            <li>In recent years, there has been a decline in bee populations, which is a cause for
+                                concern as bees play a critical role in pollination and food production. The decline in
+                                bee populations is due to various factors, including habitat loss, pesticide exposure,
+                                disease, and climate change.</li>
+                            <br>
+                            <br>
+                            <li>
+                                Reasons for decline: The decline in bee populations is due to a combination of factors,
+                                including:
+                            </li>
+
+                            <br>
+                            <br>
+                            <li>
+                                Habitat loss: The destruction of natural habitats, including wildflower meadows and
+                                forests, reduces the availability of food and nesting sites for bees.
+                            </li>
+                            <br>
+                            <br>
+                            <li>
+                                Climate change: Changes in temperature and precipitation patterns can impact the
+                                availability of food and nesting sites for bees.
+                            </li>
+
+                        </p>
+                        </p>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="sample">
+
+
+
+                    <div id="image" style="padding-top: 2rem;">
+                        <img  id="third_image" src="https://images.pexels.com/photos/3273989/pexels-photo-3273989.jpeg?auto=compress&cs=tinysrgb&w=600" alt="none">
+                    </div>
+
+                    <div>
+                        <p id="image_discriptions">
+                            <u>HONEY PRODUCTION</u>
+                            <br>
+                            <br>
+                        <p style="margin: 0px 1.2rem;">
+                            <li>
+
+                                Beekeepers can offer their hives for rent to farmers to
+                                help pollinate crops, which is especially important for crops like almonds that
+                                are almost entirely dependent on bee pollination.
+
+
+                            </li>
+                            <br><br>
+
+
+                            <li>Benefits of honey: Honey is a natural sweetener that has been used for thousands of
+                                years for its medicinal properties and as a food. It is a good source of antioxidants
+                                and has antibacterial and anti-inflammatory properties.</li>
+
+                            <br>
+                            <li>Harvesting honey: Harvesting honey involves removing the honeycomb from the hives and
+                                extracting the honey by centrifuging or straining. The harvested honey can be bottled
+                                and sold as raw or pasteurized honey.</li>
+                            <br>
+                            <li>Types of honey: There are many different types of honey, which vary in flavor, color,
+                                and aroma based on the type of flowers the bees were collecting nectar from. Some common
+                                types of honey include clover, orange blossom, wildflower, and manuka honey.</li>
+
+
+
+                        </p>
+                        </p>
+
+                    </div>
+
+                </div>
+                <hr>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+<footer>
+    <div id="footer">
+        <div id="top-footer">
+            <h1> LET'S TALK</h1>
+            <p>Let's Buzz About the Sweet World of Beekeeping: Building a Sustainable Future for Our Hives and Crops.
+            </p>
+            <a href="./contact.html">
+
+                <button class="btn_for_contact">CONTACT US</button>
+            </a>
+        </div>
+
+
+
+        <div id="mid_footer">
+            <div>
+                <a href="">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="symbol">
+
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                    target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384088.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/lucyy123" target="_blank">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/1051/1051377.png" alt="symbol">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/126/126341.png" alt="symbol">
+
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div id="copyrigth">
+        <h3>@2021-2025 Developer | All Rights Reserved </h3>
+    </div>
+
+
+</footer>
+
+
+</html>
+
+
+<script src="index.js"></script>
